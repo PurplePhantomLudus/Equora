@@ -1,9 +1,8 @@
-Permite usar la app sin conexión durante partidas de 30 minutos.
-const CACHE_NAME = 'fauna-v2';
-const assets = ['index.html', 'script.js', 'manifest.json', 'assets/portada.png'];
+const CACHE_NAME = 'equora-v4';
+const ASSETS = ['index.html', 'script.js', 'manifest.json', 'assets/portada.png'];
 
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(assets)));
+  e.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)));
 });
 
 self.addEventListener('fetch', e => {
