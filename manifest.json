@@ -1,12 +1,21 @@
 {
-  "name": "Fauna balance",
-  "short_name": "Fauna balance",
+  "name": "Equora",
+  "short_name": "Equora",
+  "description": "Calculadora de balance para ecosistemas Equora",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#166534",
-  "theme_color": "#166534",
+  "background_color": "#065f46",
+  "theme_color": "#065f46",
   "icons": [
-    { "src": "assets/logo192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "assets/logo512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "assets/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
   ]
 }
