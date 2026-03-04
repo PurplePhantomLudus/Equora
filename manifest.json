@@ -1,0 +1,12 @@
+{
+  "name": "Fauna balance",
+  "short_name": "Fauna balance",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#166534",
+  "theme_color": "#166534",
+  "icons": [
+    { "src": "assets/logo192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/logo512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
