@@ -1,6 +1,6 @@
-// Sistema de depuración para detectar errores en el móvil
+// Sistema de depuración
 window.onerror = (msg, url, line) => {
-    console.error(`❌ Error: ${msg} en ${url}:${line}`);
+    console.error(`❌ Error en Equora: ${msg} | Línea: ${line}`);
     return false;
 };
 
@@ -106,7 +106,7 @@ function showFinalRanking() {
             <h2 class="text-3xl font-black italic uppercase text-slate-800 text-center">🏆 Balance Final</h2>
             <div id="ranking-list" class="space-y-4"></div>
             <div id="solo-box" class="hidden p-6 bg-amber-400 rounded-3xl text-center border-4 border-white shadow-xl">
-                <p class="text-xs font-black uppercase italic">Nivel de Éxito</p>
+                <p class="text-xs font-black uppercase italic">Nivel de Éxito Solitario</p>
                 <p id="soles" class="text-5xl mt-2"></p>
             </div>
             <button onclick="location.reload()" class="w-full bg-slate-800 text-white font-black py-5 rounded-2xl uppercase tracking-widest italic">Nueva Partida</button>
@@ -145,7 +145,10 @@ window.onload = () => {
     for(let i=1; i<=9; i++) {
         grid.innerHTML += `
             <div class="bg-white rounded-2xl p-2 text-center shadow-sm border border-slate-50">
-                <div class="w-full aspect-square bg-slate-100 rounded-xl mb-2 flex items-center justify-center text-2xl">🐾</div>
+                <img src="assets/FAUNA${i}.png" 
+                     onerror="this.src='https://placehold.co/100?text=🐾';" 
+                     class="w-full aspect-square rounded-xl object-cover mb-2" 
+                     alt="Animal ${i}">
                 <input type="number" placeholder="Pts" class="fauna-input w-full p-1 text-center font-black bg-amber-50 rounded-lg outline-none focus:ring-2 focus:ring-amber-300">
             </div>`;
     }

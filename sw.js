@@ -1,4 +1,4 @@
-const CACHE_NAME = 'equora-cache-v6';
+const CACHE_NAME = 'equora-cache-v8';
 const ASSETS = [
   './',
   './index.html',
@@ -6,7 +6,10 @@ const ASSETS = [
   './manifest.json',
   './assets/portada.png',
   './assets/logo192.png',
-  './assets/logo512.png'
+  './assets/logo512.png',
+  './assets/FAUNA1.png', './assets/FAUNA2.png', './assets/FAUNA3.png',
+  './assets/FAUNA4.png', './assets/FAUNA5.png', './assets/FAUNA6.png',
+  './assets/FAUNA7.png', './assets/FAUNA8.png', './assets/FAUNA9.png'
 ];
 
 self.addEventListener('install', e => {
