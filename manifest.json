@@ -3,6 +3,7 @@
   "short_name": "Equora",
   "description": "Calculadora de balance para ecosistemas Equora",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#064e3b",
   "theme_color": "#064e3b",
